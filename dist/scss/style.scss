@@ -363,6 +363,9 @@ header {
 .coaching__bottom-item {
     text-align: center;
     margin-bottom: 150px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .coaching__bottom-name {

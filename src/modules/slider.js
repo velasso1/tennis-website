@@ -1,33 +1,23 @@
 'use strict;'
 
-import Swiper from 'swiper';
-
-console.log('hi');
+import Swiper, { Navigation } from 'swiper';
 
 const slider = () => {
 
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.coaching__top-right',
-      prevEl: '.coaching__top-left',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 3,
+      spaceBetween: 0,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      modules: [Navigation],
+      navigation: {
+          nextEl: ".coaching__top-right",
+          prevEl: ".coaching__top-left",
+      },
   });
-}
+};
 
 export default slider;
+
 
