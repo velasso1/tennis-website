@@ -1,8 +1,8 @@
-'use strict;'
+'use strict';
 
 import Swiper, { Navigation } from 'swiper';
 
-const slider = () => {
+export const slider = () => {
 
     const swiper = new Swiper('.swiper', {
       slidesPerView: 3,
@@ -16,8 +16,8 @@ const slider = () => {
           prevEl: ".coaching__top-left",
       },
   });
-};
+}
 
-export default slider;
+
 
 
